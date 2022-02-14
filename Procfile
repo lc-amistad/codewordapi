@@ -1,0 +1,1 @@
+web: gunicorn codewordapi.wsgi --log-file -
