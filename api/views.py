@@ -10,6 +10,6 @@ class usuariosViewSet(viewsets.ModelViewSet):
     queryset = usuarios.objects.all()
     serializer_class = usuariosSerializer
     
-    class restaurantesViewSet(viewsets.ModelViewSet):
-            queryset = restaurantes.objects.all()
-            serializer_class = restaurantesSerializer
+class restaurantesViewSet(viewsets.ModelViewSet):
+        queryset = restaurantes.objects.all()
+        serializer_class = restaurantesSerializer

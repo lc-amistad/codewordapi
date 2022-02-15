@@ -7,6 +7,7 @@ from api import views
 
 router = routers.DefaultRouter()
 router.register(r'usuarios', views.usuariosViewSet)
+router.register(r'restaurantes', views.restaurantesViewSet)
 
 
 urlpatterns = [
