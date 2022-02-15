@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'codewordapi.wsgi.application'
 
 DATABASES = {
     "default": {
-        'ENGINE': "sql_server.pyodbc",
+        'ENGINE': "mssql",
         'NAME': "codeword",
         'USER': "adminDB@codeworddb",
         'PASSWORD': "Admin1234",
