@@ -12,6 +12,8 @@ class usuarios(models.Model):
 
 class restaurantes(models.Model):
     name_restaurant = models.CharField(max_length=50)
-    type_table = models.CharField(max_length=50)
+    type_table_1 = models.CharField(max_length=50)
+    type_table_2 = models.CharField(max_length=50)
+    type_table_3 = models.CharField(max_length=50)
     phone = models.PositiveIntegerField()
     address = models.CharField(max_length=30)

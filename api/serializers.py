@@ -10,4 +10,4 @@ class usuariosSerializer(serializers.HyperlinkedModelSerializer):
 class restaurantesSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = restaurantes
-        fields = ['name_restaurant', 'type_table', 'phone', 'address']
+        fields = ['name_restaurant', 'type_table_1', 'type_table_2','type_table_3','phone', 'address']
