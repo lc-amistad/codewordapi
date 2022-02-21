@@ -21,3 +21,4 @@ class restaurantes(models.Model):
     saucer_3 = models.CharField(max_length=50)
     phone = models.PositiveIntegerField()
     address = models.CharField(max_length=30)
+    restaurant_image = models.ImageField('view')
