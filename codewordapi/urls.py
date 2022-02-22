@@ -10,7 +10,9 @@ from api import views
 router = routers.DefaultRouter()
 router.register(r'usuarios', views.usuariosViewSet)
 router.register(r'restaurantes', views.restaurantesViewSet)
-
+router.register(r'menu', views.menuViewSet)
+router.register(r'promociones', views.promocionesViewSet)
+router.register(r'booking', views.bookingViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),

@@ -10,6 +10,22 @@ class usuarios(models.Model):
     contactmail = models.CharField(max_length=30)
     cellphone = models.PositiveIntegerField()
 
+class menu(models.Model):
+    nombre_platillo = models.CharField(max_length=50)
+    ingredientes = models.CharField(max_length=50)
+
+class promociones(models.Model):
+    nombre_promocion = models.CharField(max_length=50)
+    descripcion = models.CharField(max_length=50)
+
+class booking(models.Model):
+    nombre_usuario = models.CharField(max_length=50)
+    apellido_usuario = models.CharField(max_length=50)
+    telefono = models.PositiveIntegerField()
+    email = models.CharField(max_length=30)
+    dia_hora_booking = models.DateTimeField()
+    solicitud_especial = models.CharField(max_length=50)
+
 class restaurantes(models.Model):
     name_restaurant = models.CharField(max_length=50)
     type_table_1 = models.CharField(max_length=50)
