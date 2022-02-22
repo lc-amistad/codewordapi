@@ -1,4 +1,5 @@
 
+from cgitb import handler
 from xml.dom.minidom import Document
 from django.conf import settings
 from django.contrib import admin
@@ -19,3 +20,6 @@ urlpatterns = [
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler404 = 'utils.views.error_404'
+handler500 = 'utils.views.error_500'
